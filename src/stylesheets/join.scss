@@ -21,23 +21,30 @@
 
 .join-step {
   display: flex;
-  list-style: none;
+  list-style: decimal inside;
   margin: 0;
   padding: 0;
 
   &__item {
-    &--active {
-      font-weight: bold;
+    padding-right: 0.5em;
+
+    &::after {
+      content: quote("⟩");
+      font-weight: normal;
+      padding-left: 0.5em;
     }
 
-    & + & {
-      padding-left: 0.5em;
-
-      &::before {
-        content: quote("⟩");
-        font-weight: normal;
-        padding-right: 0.5em;
+    &:last-child {
+      padding-right: 0;
+  
+      &::after {
+        content: none;
+        padding-left: 0;
       }
+    }
+
+    &--active {
+      font-weight: bold;
     }
   }
 }
