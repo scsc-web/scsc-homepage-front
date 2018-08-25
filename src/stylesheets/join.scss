@@ -12,6 +12,7 @@
 .join-form {
   &__step {
     display: none;
+    padding-bottom: 1em;
   }
 
   &__submit {
@@ -36,7 +37,7 @@
 
     &:last-child {
       padding-right: 0;
-  
+
       &::after {
         content: none;
         padding-left: 0;
