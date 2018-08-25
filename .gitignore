@@ -1,4 +1,4 @@
 .vscode/
-dist/assets/
+dist/
 node_modules/
 yarn-error.log
