@@ -23,13 +23,13 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: 'src/login.html',
-      filename: 'login.html',
+      template: 'src/accounts/login.html',
+      filename: 'accounts/login.html',
       chunks: ['login']
     }),
     new HtmlWebpackPlugin({
-      template: 'src/join.html',
-      filename: 'join.html',
+      template: 'src/accounts/join.html',
+      filename: 'accounts/join.html',
       chunks: ['join']
     })
   ],
