@@ -1,0 +1,47 @@
+:root {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.public-navbar {
+  &__nav {
+    max-width: 32em;
+  }
+}
+
+.join-form {
+  &__step {
+    display: none;
+  }
+
+  &__submit {
+    display: none;
+  }
+}
+
+.join-step {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    &--active {
+      font-weight: bold;
+    }
+
+    & + & {
+      padding-left: 0.5em;
+
+      &::before {
+        content: quote("⟩");
+        font-weight: normal;
+        padding-right: 0.5em;
+      }
+    }
+  }
+}
+
+// .no-resize {
+//   resize: none;
+// }

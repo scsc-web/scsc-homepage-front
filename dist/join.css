@@ -1,0 +1,28 @@
+@charset "UTF-8";
+:root {
+  max-width: 72rem;
+  margin: 0 auto; }
+
+.public-navbar__nav {
+  max-width: 32em; }
+
+.join-form__step {
+  display: none; }
+
+.join-form__submit {
+  display: none; }
+
+.join-step {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .join-step__item--active {
+    font-weight: bold; }
+  .join-step__item + .join-step__item {
+    padding-left: 0.5em; }
+    .join-step__item + .join-step__item::before {
+      content: "\27E9";
+      font-weight: normal;
+      padding-right: 0.5em; }
+
