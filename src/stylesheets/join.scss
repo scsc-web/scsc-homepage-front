@@ -1,13 +1,4 @@
-:root {
-  max-width: 72rem;
-  margin: 0 auto;
-}
-
-.public-navbar {
-  &__nav {
-    max-width: 32em;
-  }
-}
+@import "layout";
 
 .join-form {
   &__step {
